@@ -13,6 +13,13 @@
 		631371161C7A1E3700565875 /* weather.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 631371141C7A1E3700565875 /* weather.xcdatamodeld */; };
 		631371181C7A1E3700565875 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 631371171C7A1E3700565875 /* Assets.xcassets */; };
 		6313711B1C7A1E3700565875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 631371191C7A1E3700565875 /* LaunchScreen.storyboard */; };
+		631371271C7A273600565875 /* cities.csv in Resources */ = {isa = PBXBuildFile; fileRef = 631371261C7A273600565875 /* cities.csv */; };
+		6313712A1C7A275E00565875 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631371291C7A275E00565875 /* csv.swift */; };
+		6313712C1C7A2E5700565875 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6313712B1C7A2E5700565875 /* City.swift */; };
+		6313712E1C7A2FB100565875 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6313712D1C7A2FB100565875 /* Constants.swift */; };
+		631371301C7A798C00565875 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6313712F1C7A798C00565875 /* QuartzCore.framework */; };
+		631371341C7A831500565875 /* MarqueeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631371331C7A831500565875 /* MarqueeLabel.swift */; };
+		631371361C7A865500565875 /* Markus Ink.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 631371351C7A865500565875 /* Markus Ink.ttf */; };
 		6A225346CC7A8BB6EC9962E9 /* Pods_weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56CA03C6FD718D033972BF8 /* Pods_weather.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +32,13 @@
 		631371171C7A1E3700565875 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6313711A1C7A1E3700565875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6313711C1C7A1E3700565875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		631371261C7A273600565875 /* cities.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cities.csv; sourceTree = "<group>"; };
+		631371291C7A275E00565875 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		6313712B1C7A2E5700565875 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		6313712D1C7A2FB100565875 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6313712F1C7A798C00565875 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		631371331C7A831500565875 /* MarqueeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarqueeLabel.swift; sourceTree = "<group>"; };
+		631371351C7A865500565875 /* Markus Ink.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Markus Ink.ttf"; sourceTree = "<group>"; };
 		B56CA03C6FD718D033972BF8 /* Pods_weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6041EE9F7D190874AC7B420 /* Pods-weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weather/Pods-weather.debug.xcconfig"; sourceTree = "<group>"; };
 		E931845C9980CA58EE958336 /* Pods-weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weather.release.xcconfig"; path = "Pods/Target Support Files/Pods-weather/Pods-weather.release.xcconfig"; sourceTree = "<group>"; };
@@ -35,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				631371301C7A798C00565875 /* QuartzCore.framework in Frameworks */,
 				6A225346CC7A8BB6EC9962E9 /* Pods_weather.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,8 +87,12 @@
 		6313710C1C7A1E3700565875 /* weather */ = {
 			isa = PBXGroup;
 			children = (
+				631371251C7A272E00565875 /* data */,
+				631371281C7A273B00565875 /* util */,
+				631371241C7A237800565875 /* model */,
+				631371231C7A237300565875 /* view */,
+				631371221C7A236E00565875 /* controller */,
 				6313710D1C7A1E3700565875 /* AppDelegate.swift */,
-				6313710F1C7A1E3700565875 /* ViewController.swift */,
 				631371111C7A1E3700565875 /* Main.storyboard */,
 				631371171C7A1E3700565875 /* Assets.xcassets */,
 				631371191C7A1E3700565875 /* LaunchScreen.storyboard */,
@@ -83,9 +102,52 @@
 			path = weather;
 			sourceTree = "<group>";
 		};
+		631371221C7A236E00565875 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				6313710F1C7A1E3700565875 /* ViewController.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		631371231C7A237300565875 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		631371241C7A237800565875 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				6313712B1C7A2E5700565875 /* City.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		631371251C7A272E00565875 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				631371261C7A273600565875 /* cities.csv */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
+		631371281C7A273B00565875 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				631371351C7A865500565875 /* Markus Ink.ttf */,
+				631371331C7A831500565875 /* MarqueeLabel.swift */,
+				631371291C7A275E00565875 /* csv.swift */,
+				6313712D1C7A2FB100565875 /* Constants.swift */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
 		997615792572FEDC4FCC2665 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6313712F1C7A798C00565875 /* QuartzCore.framework */,
 				B56CA03C6FD718D033972BF8 /* Pods_weather.framework */,
 			);
 			name = Frameworks;
@@ -154,6 +216,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6313711B1C7A1E3700565875 /* LaunchScreen.storyboard in Resources */,
+				631371271C7A273600565875 /* cities.csv in Resources */,
+				631371361C7A865500565875 /* Markus Ink.ttf in Resources */,
 				631371181C7A1E3700565875 /* Assets.xcassets in Resources */,
 				631371131C7A1E3700565875 /* Main.storyboard in Resources */,
 			);
@@ -214,9 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6313712A1C7A275E00565875 /* csv.swift in Sources */,
+				6313712C1C7A2E5700565875 /* City.swift in Sources */,
 				631371161C7A1E3700565875 /* weather.xcdatamodeld in Sources */,
 				631371101C7A1E3700565875 /* ViewController.swift in Sources */,
+				631371341C7A831500565875 /* MarqueeLabel.swift in Sources */,
 				6313710E1C7A1E3700565875 /* AppDelegate.swift in Sources */,
+				6313712E1C7A2FB100565875 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
